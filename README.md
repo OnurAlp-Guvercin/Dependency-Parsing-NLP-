@@ -1,4 +1,4 @@
-# Dependency-Parsing-ArcEager-
+# Dependency-Parsing-ArcEager
 Dependency Parsing with Arc-Eager Parser and BERT-based BiLSTM Model
 
 Overview
