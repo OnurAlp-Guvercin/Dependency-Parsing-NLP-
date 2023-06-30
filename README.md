@@ -19,15 +19,20 @@ This project involves the following key steps:
 
 Data Preprocessing: The input sentences are preprocessed to prepare them for the parsing process. This may involve tokenization, part-of-speech 
 (POS) tagging, and other necessary preprocessing steps.
+
 Feature Extraction: Features are extracted from the preprocessed sentences to provide input to the parsing model. In this project, 
 BERT embeddings are utilized to capture contextualized representations of the words in the sentence.
+
 Arc-Eager Parser: The Arc-Eager parsing algorithm is implemented, which operates by applying a series of parsing actions to build the dependency 
 tree. These actions include shifting a word onto the stack, reducing words based on their dependencies, and creating new dependencies between
 words.
+
 BiLSTM Model: A Bidirectional Long Short-Term Memory (BiLSTM) model is employed to predict the parsing actions. The model takes the BERT 
 embeddings as input and learns to classify the appropriate action at each step of the parsing process.
+
 Fine-tuning with BERT: The BiLSTM model is fine-tuned using BERT embeddings to enhance its performance on the specific dependency parsing task. 
 Fine-tuning helps the model capture contextual information and improve its ability to handle various sentence structures.
+
 Training and Evaluation: The model is trained using labeled dependency parsing data, and its performance is evaluated using standard evaluation 
 metrics such as unlabeled attachment score (UAS).
 
